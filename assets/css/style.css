@@ -1,0 +1,179 @@
+/* Importación de la fuente Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*!!!! ESTILO DEL GENERAL !!!!!*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*!!!! ESTILO DEL BODY !!!!!*/
+body {
+  background: url(../image/imagen_2.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/*!!!! ESTILO DEL NAVBAR !!!!!*/ 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px 20px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Alinea los contenedores principales del navbar */
+.navbar > * {
+  flex: 1; /* Cada hijo del navbar toma el mismo espacio */
+}
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinea a la izquierda */
+}
+
+.container-fluid a{
+  color: #FDBF00;
+  font-weight: 700;
+}
+
+.container-fluid a:hover{
+  color: #FDBF00;
+}
+
+.navegacion {
+  display: flex;
+  justify-content: space-between; /* Centra los elementos */
+  align-items: center;
+}
+
+.iniciar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Alinea a la derecha */
+}
+
+/* Estilo de los enlaces de navegación */
+.navegacion a {
+  color: rgb(58, 58, 58);
+  font-weight: 600;
+  margin: 0 15px; /* Espacio entre los enlaces */
+  text-decoration: none;
+}
+
+.navegacion a.home-page {
+  color: #FDBF00;
+}
+
+.navegacion a:hover {
+  color: #FDBF00;
+}
+
+/* Estilo para el enlace de iniciar sesión */
+.iniciar a {
+  background-color: #FDBF00;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 45px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.iniciar a:hover {
+  background-color: #fd9800;
+}
+
+
+
+
+
+
+
+
+
+
+/*!!!! ESTILO DEL FOOTER !!!!!*/
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #070707;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 300px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #292929;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: #FDBF00;
+}
+
+.footer-bottom{
+  background: #FDBF00;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+  height: 10vh;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}

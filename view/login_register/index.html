@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Iniciar Sesión | EduConect</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="preload" href="../../assets/css/login_register.css" as="style" />
+    <link rel="stylesheet" href="../../assets/css/login_register.css" />
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="../../assets/image/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- MATERIAL ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light"
+        style="color: #ffffff"
+      >
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="../../index.html"
+            style="color: #f0b400"
+          >
+            <img
+              src="../../assets/image/logo.png"
+              alt="EduConect"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            EduConect
+          </a>
+        </div>
+      </nav>
+    </header>
+    <div class="container" id="container">
+      <div class="form-container sign-up">
+        <form>
+          <h1 style="font-weight: 700">
+            <i class="fa-solid fa-user" style="color: #f0b400"></i> Registrate
+          </h1>
+          <span>Usa tu matricula escolar para registrarte</span>
+          <input type="text" placeholder="Nombre(s)" />
+          <input type="text" placeholder="Apellido Paterno" />
+          <input type="text" placeholder="Apellido Materno" />
+          <div class="input-with-icon">
+            <input type="text" placeholder="Matricula" /><i
+              class="material-icons"
+              style="color: #f0b4009c"
+              >badge</i
+            >
+            <input type="password" placeholder="Contraseña" /><i
+              class="material-icons"
+              style="color: #f0b4009c"
+              >lock</i
+            >
+          </div>
+          <button>Registrarse</button>
+        </form>
+      </div>
+      <div class="form-container sign-in">
+        <form>
+          <h1 style="font-weight: 700">
+            <i class="fa-solid fa-user" style="color: #f0b400"></i> Inicia
+            sesión
+          </h1>
+          <span>Ingresa tu matricula y contraseña</span>
+          <div class="input-with-icon">
+            <input type="text" placeholder="Matricula" /><i
+              class="material-icons"
+              style="color: #f0b4009c"
+              >badge</i
+            >
+            <input type="password" placeholder="Contraseña" /><i
+              class="material-icons"
+              style="color: #f0b4009c"
+              >lock</i
+            >
+          </div>
+          <a
+            href="../forgot_pass/index.html"
+            style="font-weight: 550; color: rgb(2, 80, 168)"
+            >¿Olvidaste tu contraseña?</a
+          >
+          <button>Iniciar sesión</button>
+        </form>
+      </div>
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1 style="font-weight: 700">¡Bienvenid@ nuevamente!</h1>
+            <p>
+              Ingresa tus datos para utilizar todas las funciones de nuestra
+              plataforma
+            </p>
+            <button class="hidden" id="login">Iniciar sesión</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1 style="font-weight: 700">¡Hola!</h1>
+            <p>
+              Registrate con tus datos para utilizar todas las funciones de
+              nuestra plataforma
+            </p>
+            <button class="hidden" id="register">Registrarse</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../assets/js/script.js"></script>
+  </body>
+</html>
